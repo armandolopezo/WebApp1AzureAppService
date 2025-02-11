@@ -32,8 +32,9 @@ EOL
 pip freeze > requirements.txt
 ```
 ##### FLASK looks code in APPLICATION.PY program. In Azure App Service, by default for this kind of application the main program should be named
-##### APP.PY or APPLICATION.PY for Azure App Service (I had problems using WEB.PY program name) and the ports available are 80 and 443 instead some local
-##### FLASK configurations that works with port TCP=5000 by default.
+##### APP.PY or APPLICATION.PY (I had problems using WEB.PY program name) and the ports available are 80 and 443 instead some local
+##### FLASK configurations that works with port TCP=5000 by default. The "flask run &" is required in a local environment but the application.py and FLASK
+##### are automatically executed in Azure App Service.
 ```
 cd ~/BestBikeApp
 export FLASK_APP=application.py
