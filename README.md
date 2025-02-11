@@ -40,8 +40,8 @@ cd ~/BestBikeApp
 export FLASK_APP=application.py
 flask run &
 ```
-##### The following block of five export commands should be executed in AZURE CLOUD SHELL, after the Azure App Service is configures with one App with an
-##### Azure Plan. I used Azure App Free tier with one App, and the following code has not being tested with several apps or several azure plans working
+##### The following block of five export commands should be executed in AZURE CLOUD SHELL after the Azure App Service is configured with one App and with an
+##### Azure Plan (unique). I used Azure App Free tier with one App, and the following code has not being tested with several apps or several azure plans working
 ##### or installed concurrently. 
 ```
 export APPNAME=$(az webapp list --query [0].name --output tsv)
