@@ -50,3 +50,8 @@ export APPPLAN=$(az appservice plan list --query [0].name --output tsv)
 export APPSKU=$(az appservice plan list --query [0].sku.name --output tsv)
 export APPLOCATION=$(az appservice plan list --query [0].location --output tsv)
 ```
+##### The command "az webapp up" update the code of the application of the Azure App Service.
+```
+cd ~/BestBikeApp
+az webapp up --name $APPNAME --resource-group $APPRG --plan $APPPLAN --sku $APPSKU --location "$APPLOCATION"
+```
