@@ -25,3 +25,9 @@ if __name__ == "__main__":
     app.run(host='0.0.0.0', port=port)
 EOL
 ```
+##### The following command creates de file "requirements.txt" with the python packages needed in a local environment. I believe this command is not needed
+##### with Azure App Service ( I assume Azure loads common packages).
+
+```
+pip freeze > requirements.txt
+```
