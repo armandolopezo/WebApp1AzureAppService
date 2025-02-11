@@ -55,3 +55,7 @@ export APPLOCATION=$(az appservice plan list --query [0].location --output tsv)
 cd ~/BestBikeApp
 az webapp up --name $APPNAME --resource-group $APPRG --plan $APPPLAN --sku $APPSKU --location "$APPLOCATION"
 ```
+##### My published Azure WEb page is shown below: 
+```
+mediatech-c0h7bjatg8bwb2ex.eastus2-01.azurewebsites.net
+```
