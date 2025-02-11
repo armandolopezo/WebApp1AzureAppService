@@ -25,7 +25,7 @@ if __name__ == "__main__":
     app.run(host='0.0.0.0', port=port)
 EOL
 ```
-##### The following command creates de file "requirements.txt" with the python packages needed in a local environment. 
+##### The following command creates de file "requirements.txt" with the python packages needed. 
 
 ```
 pip freeze > requirements.txt
