@@ -1,5 +1,5 @@
-##### In a local environment or Microsoft Learn Sandbox the following 3 commands are required 
-##### to activate a Python Virtual Environment and install FLASK with PIP. PIP manages and installa PYTHON PACKAGES.
+##### In a local environment, Azure App Service or Microsoft Learn Sandbox the following 3 commands are required 
+##### to activate a Python Virtual Environment and install FLASK with PIP. PIP manages and installs PYTHON PACKAGES.
 ```
 python3 -m venv venv
 source venv/bin/activate
@@ -25,16 +25,14 @@ if __name__ == "__main__":
     app.run(host='0.0.0.0', port=port)
 EOL
 ```
-##### The following command creates de file "requirements.txt" with the python packages needed in a local environment. I believe this command is not needed
-##### with Azure App Service ( I assume Azure loads common packages).
+##### The following command creates de file "requirements.txt" with the python packages needed. 
 
 ```
 pip freeze > requirements.txt
 ```
 ##### FLASK looks code in APPLICATION.PY program. In Azure App Service, by default for this kind of application the main program should be named
 ##### APP.PY or APPLICATION.PY (I had problems using WEB.PY program name) and the ports available are 80 and 443 instead some local
-##### FLASK configurations that works with port TCP=5000 by default. The "flask run &" is required in a local environment but the application.py and FLASK
-##### are automatically executed in Azure App Service.
+##### FLASK configurations that works with port TCP=5000 by default. 
 ```
 cd ~/BestBikeApp
 export FLASK_APP=application.py
