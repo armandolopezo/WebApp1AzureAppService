@@ -5,7 +5,7 @@ python3 -m venv venv
 source venv/bin/activate
 pip install flask
 ```
-##### I will create and work with de "BestBikeApp" directory
+##### I will create and work with de "BestBikeApp" directory (the following two commands)
 ```
 mkdir ~/BestBikeApp
 cd ~/BestBikeApp
