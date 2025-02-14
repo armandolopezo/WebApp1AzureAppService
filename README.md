@@ -57,7 +57,7 @@ az webapp up --name $APPNAME --resource-group $APPRG --plan $APPPLAN --sku $APPS
 ```
 http://mediatech-c0h7bjatg8bwb2ex.eastus2-01.azurewebsites.net
 ```
-<span style="color: blue;">##### I learned that Azure App Service uses the following layers for a Python Web App with Flask: .</span>
+##### <span style="color: blue;"> I learned that Azure App Service uses the following layers for a Python Web App with Flask: .</span>
 ##### I learned that Azure App Service uses the following layers for a Python Web App with Flask: 
 ##### 1) Ubuntu (or other Linux Distro)  2) Docker.  3) Python.  4) Virtual Python Environment.  5) Flask  6) NGINX  7) Gunicorn
 ##### NGINX act as reverse proxy server, load balancer, content cache server, web server for Static clients, can manage slow connections,
