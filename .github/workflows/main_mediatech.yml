@@ -72,6 +72,9 @@ jobs:
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_596773032C874D5193B6ADFBB953A6E9 }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_6F6E622C019B4D72B0700EB43ED87C8A }}
 
+      - name: Building web app
+        uses: azure/appservice-build@v3
+
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
