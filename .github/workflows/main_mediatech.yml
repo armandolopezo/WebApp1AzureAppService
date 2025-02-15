@@ -22,7 +22,7 @@ jobs:
       - name: Set up Python version
         uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: '3.9'
 
       - name: Create and start virtual environment
         run: |
@@ -68,12 +68,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_2264B05050F543F1AD9E4952DDBFAB81 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_596773032C874D5193B6ADFBB953A6E9 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_6F6E622C019B4D72B0700EB43ED87C8A }}
-
-      - name: Building web app
-        uses: azure/appservice-build@v3
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_618865A88656409F8B9561A7BBC2B826 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_9156396ED4C9451BAA9B3261BDBBD255 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_05EBC4BE41484438836C800DEEA5EC96 }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
@@ -81,11 +78,5 @@ jobs:
         with:
           app-name: 'mediatech'
           slot-name: 'Production'
-         
-      - name: 'name and uses AL insertion for Azure Authentication'
-        uses: azure/webapps-deploy@v2
-        with:
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-         
-
           
