@@ -74,7 +74,10 @@ jobs:
 
       - name: Building web app
         uses: azure/appservice-build@v3
-
+        with:
+          source-directory: <SOURCE_DIR>
+          output-directory: <OUTPUT_DIR>
+          
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
