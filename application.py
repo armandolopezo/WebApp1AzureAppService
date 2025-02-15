@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, redirect
 
 app = Flask(__name__)
 
@@ -7,12 +7,8 @@ def hello():
     return """
     <html>
         <body>
-            <h1>Hello Best Bike App!</h1>
-            <script type="text/javascript">
-                setTimeout(function() {
-                    window.location.href = "http://mediatech.com.ec/";
-                }, 3100);
-            </script>
+            <h1>Welcome! My First Python WEB app, greetings ARMANDO LOPEZ</h1>
+            <meta http-equiv="refresh" content="3;url=http://mediatech.com.ec/" />
         </body>
     </html>
     """
