@@ -7,7 +7,7 @@ def hello():
     return """
     <html>
         <body>
-            <h1>Welcome! My First Python WEB app, greetings ARMANDO LOPEZ</h1>
+            <h1>Welcome! My First Python WEB app, greetings ARMANDO LOPEZ (March 27, 2025) </h1>
             <meta http-equiv="refresh" content="3;url=http://mediatech.com.ec/" />
         </body>
     </html>
